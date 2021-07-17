@@ -32,17 +32,25 @@
         <a href="" class="justify-self-start">
           <img src="img/logo.svg" alt="logo" />
         </a>
-        <div>
-          <a href="#bakery">BAKERY</a>
-          <a href="#dishes">DISHES</a>
-          <a href="#snacks">SNACKS/DESSERTS</a>
-          <a href="#grocery">GROCERY</a>
-          <a href="#remitance">REMITANCE</a>
-        </div>
+        <a class="font-medium text-gray-700 p-1.5 rounded-2xl hover:bg-yellow-500 hover:text-gray-100 border-opacity-0 hover:border-opacity-80 border-b-2 hover:border-blue-400" href="#bakery">BAKERY</a>
+        <a class="font-medium text-gray-700 p-1.5 rounded-2xl hover:bg-yellow-500 hover:text-gray-100 border-opacity-0 hover:border-opacity-80 border-b-2 hover:border-blue-400" href="#dishes">DISHES</a>
+        <a class="font-medium text-gray-700 p-1.5 rounded-2xl hover:bg-yellow-500 hover:text-gray-100 border-opacity-0 hover:border-opacity-80 border-b-2 hover:border-blue-400" href="#snacks">SNACKS/DESSERTS</a>
+        <a class="font-medium text-gray-700 p-1.5 rounded-2xl hover:bg-yellow-500 hover:text-gray-100 border-opacity-0 hover:border-opacity-80 border-b-2 hover:border-blue-400" href="#grocery">GROCERY</a>
+        <a class="font-medium text-gray-700 p-1.5 rounded-2xl hover:bg-yellow-500 hover:text-gray-100 border-opacity-0 hover:border-opacity-80 border-b-2 hover:border-blue-400" href="#remitance">REMITANCE</a>
       </section>
-      <section name="hero" aria-label="Hero">
-        <div>
-          <img src="" alt="" />
+      <section class="w-full p-7" name="hero" aria-label="Hero">
+        <div class="max-w-5xl ml-auto mr-auto flex-col pb-10">
+            <div class="h-96 ">
+                <img src="" alt="" />
+            </div>
+            <div class="flex-col justify-self-start font-semibold text-xl text-gray-700 pb-3">
+                <h1 class="pb-2">HOMEMADE FILIPINO FOOD <br/> AND FRESHLY BAKED BREADS</h1>
+
+                <a href="#contactUs" class="inline-flex items-center p-1.5 bg-yellow-500 border-b-2 border-blue-400 shadow-md rounded-2xl">
+                    <span class="text-gray-50 pr-1">CONTACT US</span>
+                    <img src="img/arrow.svg">
+                </a>
+            </div>
         </div>
       </section>
       <section name="bakery" aria-label="Bakery"></section>
@@ -50,7 +58,14 @@
       <section name="snacks" aria-label="Snacks"></section>
       <section name="grocery" aria-label="Grocery"></section>
       <section name="remitance" aria-label="Remitance"></section>
-      <section name="testimonials" aria-label="Testimonials"></section>
+      <section name="testimonials" aria-label="Testimonials" class="w-full p-7">
+        <div class="max-w-5xl ml-auto mr-auto flex align-middle pb-10">
+            <div>
+                <div class="w-32 border-2 border-gray-600 mb-5 rounded"></div>
+                <h1 class="font-semibold text-xl text-gray-700 pb-3">TESTIMONIALS</h1>
+            </div>
+        </div>
+      ></section>
       <section name="gallery" aria-label="Gallery"
         class="w-full p-7"
        >
@@ -60,14 +75,13 @@
                 <h1 class="font-semibold text-xl text-gray-700 pb-3">GALLERY</h1>
             </div>
         </div>
-        </section>
-
+    </section>
     <section
     name="contactUs"
     aria-label="ContactUs"
     class="w-full bg-gray-50 p-7"
       >
-        <div class="max-w-5xl ml-auto mr-auto flex justify-around align-middle pb-10 border-b border-gray-300">
+        <div class="max-w-5xl ml-auto mr-auto flex justify-between align-middle pb-10 border-b border-gray-300">
             <div>
             <h1 class="font-semibold text-xl text-gray-700 pb-3">Contact Us</h1>
             <p class="text-gray-700">(613) 260-7171</p>
@@ -75,7 +89,8 @@
             <div>
             <h1 class="font-semibold text-xl text-gray-700 pb-3">Address</h1>
             <a
-                href="https://www.google.com/maps/dir//filipino+bakery/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4cce08a8c44bea39:0x9adb0df8b9b8255d?sa=X&ved=2ahUKEwj-idz3wejxAhVJVs0KHV5ACtYQ9RcwE3oECFgQBQ"
+                href="https://www.google.com/maps/dir//filipino+bakery"
+                target="_blank"
             >
                 <p class="text-gray-700 hover:text-blue-600 underline">
                 1800 Bank Street
