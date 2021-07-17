@@ -24,11 +24,10 @@
     <div class="flex justify-center items-start w-full">
       <img src="img/flags.svg" />
     </div>
-    <div class="flex max-w-lg w-full flex-col">
       <section
         name="navigation"
         aria-label="Navigation"
-        class="flex justify-between items-center w-full"
+        class="flex justify-between items-center w-full max-w-5xl ml-auto mr-auto"
       >
         <a href="" class="justify-self-start">
           <img src="img/logo.svg" alt="logo" />
@@ -52,15 +51,52 @@
       <section name="grocery" aria-label="Grocery"></section>
       <section name="remitance" aria-label="Remitance"></section>
       <section name="testimonials" aria-label="Testimonials"></section>
-      <section name="gallery" aria-label="Gallery"></section>
-      <section
-        name="contactUs"
-        aria-label="ContactUs"
-        class="w-full flex justify-between align-middle"
+      <section name="gallery" aria-label="Gallery"
+        class="w-full p-7"
+       >
+        <div class="max-w-5xl ml-auto mr-auto flex align-middle pb-10">
+            <div>
+                <div class="w-32 border-2 border-gray-600 mb-5 rounded"></div>
+                <h1 class="font-semibold text-xl text-gray-700 pb-3">GALLERY</h1>
+            </div>
+        </div>
+        </section>
+
+    <section
+    name="contactUs"
+    aria-label="ContactUs"
+    class="w-full bg-gray-50 p-7"
       >
-        <div><h1>Contact Us</h1></div>
-        <div><h1>Address</h1></div>
-        <div><h1>Business Hours</h1></div>
+        <div class="max-w-5xl ml-auto mr-auto flex justify-around align-middle pb-10 border-b border-gray-300">
+            <div>
+            <h1 class="font-semibold text-xl text-gray-700 pb-3">Contact Us</h1>
+            <p class="text-gray-700">(613) 260-7171</p>
+            </div>
+            <div>
+            <h1 class="font-semibold text-xl text-gray-700 pb-3">Address</h1>
+            <a
+                href="https://www.google.com/maps/dir//filipino+bakery/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4cce08a8c44bea39:0x9adb0df8b9b8255d?sa=X&ved=2ahUKEwj-idz3wejxAhVJVs0KHV5ACtYQ9RcwE3oECFgQBQ"
+            >
+                <p class="text-gray-700 hover:text-blue-600 underline">
+                1800 Bank Street
+                <br />
+                Ottawa, ON K1V 0W3
+                <br />
+                Canada
+                </p>
+            </a>
+            </div>
+
+            <div>
+            <h1 class="font-semibold text-xl text-gray-700 pb-3">Business Hours</h1>
+            <p class="text-gray-700">Mon - Fri: 8am - 8:30pm</p>
+            <p class="text-gray-700">Sat: 8am - 8pm</p>
+            <p class="text-gray-700">Sun: 8am - 7pm</p>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <p class="text-gray-600">fiestamanila © 2021</p>
+        </div>
       </section>
     </div>
 
