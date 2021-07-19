@@ -1,0 +1,13 @@
+#carousel {
+  animation: slideshow 12s linear infinite;
+  width: 1000px;
+}
+
+@keyframes slideshow {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
