@@ -32,13 +32,13 @@
             <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
               <!-- Mobile menu button-->
               <button onclick="changeMenuIcon()" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <svg id="burgerIcon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-                <svg id="xIcon" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+                    <span class="sr-only">Open main menu</span>
+                    <svg id="burgerIcon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg id="xIcon" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
                 </button>
             </div>
             <div class="flex-1 flex items-center justify-center md:items-stretch md:justify-start">
@@ -58,7 +58,7 @@
         </div>
 
         <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="hidden md:hidden" id="mobile-menu">
+        <div id="menu-mobile" class="hidden md:hidden" id="mobile-menu">
           <div class="px-2 pt-2 pb-3 space-y-1 text-center">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a href="#bakery" class="hover:border-yellow-600 hover:border-b hover:text-gray-100 hover:bg-yellow-500 text-gray-600 block px-3 py-2 rounded-md text-base font-medium" aria-current="page">bakery</a>
@@ -96,33 +96,40 @@
                <div class="w-14 border border-yellow-500 mb-5 rounded"></div>
                <h1 class="font-semibold text-xl text-yellow-600 pb-3">BAKERY</h1>
            </div>
-            <div class="w-full grid grid-flow-row grid-cols-3 grid-rows-1 gap-4">
-                <div class="h-96 w-64 hover:bg-white shadow-md rounded-lg p-2">
-                    <img loading="lazy" src="img/ensaymada.jpg" class="w-full h-3/5 rounded-lg object-fill">
+            <div class="w-full grid grid-flow-row grid-cols-2 md:grid-cols-3 grid-rows-1 gap-4">
+                <div class="h-72 w-52 md:h-96 md:w-64 hover:bg-white shadow-md rounded-lg p-1 md:p-2">
+                    <img loading="lazy" src="img/ensaymada.jpg" class="w-full h-4/6 md:h-3/5 rounded-lg object-fill">
                     <div class="p-1">
-                        <p class="text-center text-gray-700 text-xl pb-1">Ensaymada</p>
-                        <p class="text-gray-600 text-sm">Lorem ipsum blabla this is pourquio hit si aprendre</p>
+                        <p class="text-center text-gray-700 text-lg md:text-xl pb-1">Ensaymada</p>
+                        <p class="text-gray-600 text-xs md:text-sm">Lorem ipsum blabla this is pourquio hit si aprendre</p>
                     </div>
                 </div>
-                <div class="h-96 w-64 hover:bg-white shadow-md rounded-lg p-2">
-                    <img loading="lazy" src="img/ensaymada.jpg" class="w-full h-3/5 rounded-lg object-fill">
+                <div class="h-72 w-52 md:h-96 md:w-64 hover:bg-white shadow-md rounded-lg p-1 md:p-2">
+                    <img loading="lazy" src="img/ensaymada.jpg" class="w-full h-4/6 md:h-3/5 rounded-lg object-fill">
                     <div class="p-1">
-                        <p class="text-center text-gray-700 text-xl pb-1">Ensaymada</p>
-                        <p class="text-gray-600 text-sm">Lorem ipsum blabla this is pourquio hit si aprendre</p>
+                        <p class="text-center text-gray-700 text-lg md:text-xl pb-1">Ensaymada</p>
+                        <p class="text-gray-600 text-xs md:text-sm">Lorem ipsum blabla this is pourquio hit si aprendre</p>
                     </div>
                 </div>
-                <div class="h-96 w-64 hover:bg-white shadow-md rounded-lg p-2">
-                    <img loading="lazy" src="img/ensaymada.jpg" class="w-full h-3/5 rounded-lg object-fill">
+                <div class="h-72 w-52 md:h-96 md:w-64 hover:bg-white shadow-md rounded-lg p-1 md:p-2">
+                    <img loading="lazy" src="img/ensaymada.jpg" class="w-full h-4/6 md:h-3/5 rounded-lg object-fill">
                     <div class="p-1">
-                        <p class="text-center text-gray-700 text-xl pb-1">Ensaymada</p>
-                        <p class="text-gray-600 text-sm">Lorem ipsum blabla this is pourquio hit si aprendre</p>
+                        <p class="text-center text-gray-700 text-lg md:text-xl pb-1">Ensaymada</p>
+                        <p class="text-gray-600 text-xs md:text-sm">Lorem ipsum blabla this is pourquio hit si aprendre</p>
                     </div>
                 </div>
-                <div class="h-96 w-64 hover:bg-white shadow-md rounded-lg p-2">
-                    <img loading="lazy" src="img/ensaymada.jpg" class="w-full h-3/5 rounded-lg object-fill">
+                <div class="h-72 w-52 md:h-96 md:w-64 hover:bg-white shadow-md rounded-lg p-1 md:p-2">
+                    <img loading="lazy" src="img/ensaymada.jpg" class="w-full h-4/6 md:h-3/5 rounded-lg object-fill">
                     <div class="p-1">
-                        <p class="text-center text-gray-700 text-xl pb-1">Ensaymada</p>
-                        <p class="text-gray-600 text-sm">Lorem ipsum blabla this is pourquio hit si aprendre</p>
+                        <p class="text-center text-gray-700 text-lg md:text-xl pb-1">Ensaymada</p>
+                        <p class="text-gray-600 text-xs md:text-sm">Lorem ipsum blabla this is pourquio hit si aprendre</p>
+                    </div>
+                </div>
+                <div class="h-72 w-52 md:h-96 md:w-64 hover:bg-white shadow-md rounded-lg p-1 md:p-2">
+                    <img loading="lazy" src="img/ensaymada.jpg" class="w-full h-4/6 md:h-3/5 rounded-lg object-fill">
+                    <div class="p-1">
+                        <p class="text-center text-gray-700 text-lg md:text-xl pb-1">Ensaymada</p>
+                        <p class="text-gray-600 text-xs md:text-sm">Lorem ipsum blabla this is pourquio hit si aprendre</p>
                     </div>
                 </div>
             </div>
@@ -131,44 +138,23 @@
 
       <section id="dishes" aria-label="Dishes" class="w-full p-7 pt-16">
        <div class="max-w-5xl ml-auto mr-auto flex-col align-middle pb-10">
-           <div class="pb-8">
+           <div class="pb-8"></div>
                <div class="w-14 border border-yellow-500 mb-5 rounded"></div>
                <h1 class="font-semibold text-xl text-yellow-600 pb-3">DISHES</h1>
            </div>
             <div class="w-full grid grid-flow-row grid-cols-3 grid-rows-1 gap-4">
-                <div class="h-96 w-64 hover:bg-white shadow-md rounded-lg p-2">
-                    <img loading="lazy" src="img/ensaymada.jpg" class="w-full h-3/5 rounded-lg object-fill">
+                <div class="h-72 w-52 md:h-96 md:w-64 hover:bg-white shadow-md rounded-lg p-1 md:p-2">
+                    <img loading="lazy" src="img/ensaymada.jpg" class="w-full h-4/6 md:h-3/5 rounded-lg object-fill">
                     <div class="p-1">
-                        <p class="text-center text-gray-700 text-xl pb-1">Ensaymada</p>
-                        <p class="text-gray-600 text-sm">Lorem ipsum blabla this is pourquio hit si aprendre</p>
-                    </div>
-                </div>
-                <div class="h-96 w-64 hover:bg-white shadow-md rounded-lg p-2">
-                    <img loading="lazy" src="img/ensaymada.jpg" class="w-full h-3/5 rounded-lg object-fill">
-                    <div class="p-1">
-                        <p class="text-center text-gray-700 text-xl pb-1">Ensaymada</p>
-                        <p class="text-gray-600 text-sm">Lorem ipsum blabla this is pourquio hit si aprendre</p>
-                    </div>
-                </div>
-                <div class="h-96 w-64 hover:bg-white shadow-md rounded-lg p-2">
-                    <img loading="lazy" src="img/ensaymada.jpg" class="w-full h-3/5 rounded-lg object-fill">
-                    <div class="p-1">
-                        <p class="text-center text-gray-700 text-xl pb-1">Ensaymada</p>
-                        <p class="text-gray-600 text-sm">Lorem ipsum blabla this is pourquio hit si aprendre</p>
-                    </div>
-                </div>
-                <div class="h-96 w-64 hover:bg-white shadow-md rounded-lg p-2">
-                    <img loading="lazy" src="img/ensaymada.jpg" class="w-full h-3/5 rounded-lg object-fill">
-                    <div class="p-1">
-                        <p class="text-center text-gray-700 text-xl pb-1">Ensaymada</p>
-                        <p class="text-gray-600 text-sm">Lorem ipsum blabla this is pourquio hit si aprendre</p>
+                        <p class="text-center text-gray-700 text-lg md:text-xl pb-1">Ensaymada</p>
+                        <p class="text-gray-600 text-xs md:text-sm">Lorem ipsum blabla this is pourquio hit si aprendre</p>
                     </div>
                 </div>
             </div>
        </div>
       </section>
 
-      <section id="snacks" aria-label="Snacks">
+      <section id="snacks" aria-label="Snacks" class="w-full p-7 pt-16">
        <div class="max-w-5xl ml-auto mr-auto flex-col align-middle pb-10">
            <div class="pb-8">
                <div class="w-14 border border-yellow-500 mb-5 rounded"></div>

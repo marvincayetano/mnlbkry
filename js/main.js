@@ -1,16 +1,25 @@
 let mobileMenuIsOpen = false;
 const burgerIcon = document.getElementById('burgerIcon');
-const xIcon = document.getElementById('xicon');
+const xIcon = document.getElementById('xIcon');
+const menuMobile = document.getElementById('menu-mobile');
 
-function changeMenuIcon() {
-    console.log("GAGO");
-
+window.changeMenuIcon = function changeMenuIcon() {
     mobileMenuIsOpen = !mobileMenuIsOpen;
     if(mobileMenuIsOpen) {
-        burgerIcon.style.display = "hidden"
-        xIcon.style.display = "block"
+        burgerIcon.classList.remove("block");
+        burgerIcon.classList.add("hidden");
+
+        xIcon.classList.remove("hidden");
+        xIcon.classList.add("block");
+
+        menuMobile.classList.remove("hidden")
     } else {
-        burgerIcon.style.display = "block"
-        xIcon.style.display = "hidden"
+        burgerIcon.classList.remove("hidden");
+        burgerIcon.classList.add("block");
+
+        xIcon.classList.remove("block");
+        xIcon.classList.add("hidden");
+
+        menuMobile.classList.add("hidden")
     }
 }
