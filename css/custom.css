@@ -4,7 +4,11 @@ html {
 
 #carousel {
   animation: slideshow 12s linear infinite;
-  width: 1000px;
+  width: 1800px;
+
+  @media (min-width: 768px) {
+    width: 1000px;
+  }
 }
 
 @keyframes slideshow {
