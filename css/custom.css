@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 #carousel {
   animation: slideshow 12s linear infinite;
   width: 1000px;

@@ -26,7 +26,7 @@
       <img src="img/flags.svg" />
     </div>
       <section
-        name="navigation"
+        id="navigation"
         aria-label="Navigation"
         class="flex justify-between items-center w-full max-w-5xl ml-auto mr-auto"
       >
@@ -58,10 +58,10 @@
       </section>
       <div class="w-full h-6 bg-gray-50 -mt-5"></div>
 
-      <section name="bakery" aria-label="Bakery" class="w-full p-7 bg-gray-50 pt-16">
+      <section id="bakery" aria-label="Bakery" class="w-full p-7 bg-gray-50 pt-16">
        <div class="max-w-5xl ml-auto mr-auto flex-col align-middle pb-10">
            <div class="pb-8">
-               <div class="w-32 border-2 border-yellow-500 mb-5 rounded"></div>
+               <div class="w-14 border border-yellow-500 mb-5 rounded"></div>
                <h1 class="font-semibold text-xl text-yellow-600 pb-3">BAKERY</h1>
            </div>
             <div class="w-full grid grid-flow-row grid-cols-3 grid-rows-1 gap-4">
@@ -97,10 +97,10 @@
        </div>
       </section>
 
-      <section name="dishes" aria-label="Dishes" class="w-full p-7 pt-16">
+      <section id="dishes" aria-label="Dishes" class="w-full p-7 pt-16">
        <div class="max-w-5xl ml-auto mr-auto flex-col align-middle pb-10">
            <div class="pb-8">
-               <div class="w-32 border-2 border-yellow-500 mb-5 rounded"></div>
+               <div class="w-14 border border-yellow-500 mb-5 rounded"></div>
                <h1 class="font-semibold text-xl text-yellow-600 pb-3">DISHES</h1>
            </div>
             <div class="w-full grid grid-flow-row grid-cols-3 grid-rows-1 gap-4">
@@ -136,10 +136,10 @@
        </div>
       </section>
 
-      <section name="snacks" aria-label="Snacks">
+      <section id="snacks" aria-label="Snacks">
        <div class="max-w-5xl ml-auto mr-auto flex-col align-middle pb-10">
            <div class="pb-8">
-               <div class="w-32 border-2 border-yellow-500 mb-5 rounded"></div>
+               <div class="w-14 border border-yellow-500 mb-5 rounded"></div>
                <h1 class="font-semibold text-xl text-yellow-600 pb-8">SNACKS & DESSERTS</h1>
                 <div class="w-full grid grid-flow-col grid-rows-1">
                     <div class="relative h-64 w-64 hover:bg-white">
@@ -175,10 +175,10 @@
         </div>
       </section>
 
-      <section name="grocery" aria-label="Grocery">
+      <section id="grocery" aria-label="Grocery">
         <div class="max-w-5xl ml-auto mr-auto flex-col align-middle pb-10">
            <div class="pb-8 overflow-hidden">
-               <div class="w-32 border-2 border-yellow-500 mb-5 rounded"></div>
+               <div class="w-14 border border-yellow-500 mb-5 rounded"></div>
                <h1 class="font-semibold text-xl text-yellow-600 pb-5">GROCERIES</h1>
                 <!-- TODO: CAROUSEL HERE -->
                 <div id="carousel" class="flex items-center flex-nowrap">
@@ -201,39 +201,26 @@
         </div>
       </section>
 
-      <section name="remittance" aria-label="Remittance">
+      <section id="remittance" aria-label="Remittance">
         <div class="max-w-5xl ml-auto mr-auto flex-col align-middle pb-10">
            <div class="pb-8">
-               <div class="w-32 border-2 border-yellow-500 mb-5 rounded"></div>
-               <h1 class="font-semibold text-xl text-yellow-600 pb-3">REMITTANCE</h1>
+               <div class="w-14 border border-yellow-500 mb-5 rounded"></div>
+               <h1 class="font-semibold text-xl text-yellow-600 pb-5">REMITTANCE</h1>
 
-               <div class="flex">
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
+               <div class="flex-col justify-left items-center">
+                   <p class="text-gray-600 pb-2">We do remittance via Western Union</p>
+                    <img class="h-40 w-96 rounded" src="img/wu.png" alt="">
                </div>
             </div>
         </div>
       </section>
 
-      <section name="gallery" aria-label="Gallery"
+      <section id="gallery" aria-label="Gallery"
         class="w-full p-7"
        >
         <div class="max-w-5xl ml-auto mr-auto flex align-middle pb-10">
             <div class="pb-8">
-                <div class="w-32 border-2 border-yellow-500 mb-5 rounded"></div>
+                <div class="w-14 border border-yellow-500 mb-5 rounded"></div>
                 <h1 class="font-semibold text-xl text-yellow-600 pb-8">GALLERY</h1>
                 <div class="w-full grid grid-flow-row grid-cols-3 grid-rows-1 gap-4">
                     <!-- TODO: Add modal fullscreen of image here -->
@@ -261,7 +248,7 @@
     </section>
 
     <section
-    name="contactUs"
+    id="contactUs"
     aria-label="ContactUs"
     class="w-full bg-gray-50 p-7"
       >
