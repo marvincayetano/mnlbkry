@@ -25,29 +25,75 @@
     <div class="flex justify-center items-start w-full">
       <img src="img/flags.svg" />
     </div>
-      <section
-        id="navigation"
-        aria-label="Navigation"
-        class="flex justify-between items-center w-full max-w-5xl ml-auto mr-auto"
-      >
-        <a href="" class="justify-self-start">
-          <img src="img/logo.svg" alt="logo" />
-        </a>
-        <a class="font-medium text-gray-700 p-1.5 rounded-2xl hover:bg-yellow-500 hover:text-gray-100 border-opacity-0 hover:border-opacity-80 border-b-2 hover:border-yellow-600" href="#bakery">BAKERY</a>
-        <a class="font-medium text-gray-700 p-1.5 rounded-2xl hover:bg-yellow-500 hover:text-gray-100 border-opacity-0 hover:border-opacity-80 border-b-2 hover:border-yellow-600" href="#dishes">DISHES</a>
-        <a class="font-medium text-gray-700 p-1.5 rounded-2xl hover:bg-yellow-500 hover:text-gray-100 border-opacity-0 hover:border-opacity-80 border-b-2 hover:border-yellow-600" href="#snacks">SNACKS/DESSERTS</a>
-        <a class="font-medium text-gray-700 p-1.5 rounded-2xl hover:bg-yellow-500 hover:text-gray-100 border-opacity-0 hover:border-opacity-80 border-b-2 hover:border-yellow-600" href="#grocery">GROCERY</a>
-        <a class="font-medium text-gray-700 p-1.5 rounded-2xl hover:bg-yellow-500 hover:text-gray-100 border-opacity-0 hover:border-opacity-80 border-b-2 hover:border-yellow-600" href="#remittance">REMITTANCE</a>
-      </section>
+
+    <nav>
+        <div class="max-w-7xl mx-auto px-2 sm:pr-6 lg:px-8">
+          <div class="relative flex items-center justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
+              <!-- Mobile menu button-->
+              <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <!--
+                  Icon when menu is closed.
+
+                  Heroicon name: outline/menu
+
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!--
+                  Icon when menu is open.
+
+                  Heroicon name: outline/x
+
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                </button>
+            </div>
+            <div class="flex-1 flex items-center justify-center md:items-stretch md:justify-start">
+              <div class="flex-shrink-0 flex items-center">
+                <img class="block lg:hidden w-auto" src="img/logo-mobile.svg" alt="Logo">
+                <img class="hidden lg:block w-auto" src="img/logo.svg" alt="Logo">
+              </div>
+                <div class="hidden md:flex justify-around items-center w-full max-w-5xl ml-auto mr-auto">
+                    <a class="font-medium text-gray-700 p-1.5 rounded-2xl hover:bg-yellow-500 hover:text-gray-100 border-opacity-0 hover:border-opacity-80 border-b-2 hover:border-yellow-600" href="#bakery">BAKERY</a>
+                    <a class="font-medium text-gray-700 p-1.5 rounded-2xl hover:bg-yellow-500 hover:text-gray-100 border-opacity-0 hover:border-opacity-80 border-b-2 hover:border-yellow-600" href="#dishes">DISHES</a>
+                    <a class="font-medium text-gray-700 p-1.5 rounded-2xl hover:bg-yellow-500 hover:text-gray-100 border-opacity-0 hover:border-opacity-80 border-b-2 hover:border-yellow-600" href="#snacks">SNACKS/DESSERTS</a>
+                    <a class="font-medium text-gray-700 p-1.5 rounded-2xl hover:bg-yellow-500 hover:text-gray-100 border-opacity-0 hover:border-opacity-80 border-b-2 hover:border-yellow-600" href="#grocery">GROCERY</a>
+                    <a class="font-medium text-gray-700 p-1.5 rounded-2xl hover:bg-yellow-500 hover:text-gray-100 border-opacity-0 hover:border-opacity-80 border-b-2 hover:border-yellow-600" href="#remittance">REMITTANCE</a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="md:hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1 text-center">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#bakery" class="hover:border-yellow-600 hover:border-b hover:text-gray-100 hover:bg-yellow-500 text-gray-600 block px-3 py-2 rounded-md text-base font-medium" aria-current="page">bakery</a>
+            <a href="#dishes" class="hover:border-yellow-600 hover:border-b hover:text-gray-100 hover:bg-yellow-500 text-gray-600 block px-3 py-2 rounded-md text-base font-medium" aria-current="page">dishes</a>
+            <a href="#snacks/desserts" class="hover:border-yellow-600 hover:border-b hover:text-gray-100 hover:bg-yellow-500 text-gray-600 block px-3 py-2 rounded-md text-base font-medium" aria-current="page">snacks/desserts</a>
+            <a href="#grocery" class="hover:border-yellow-600 hover:border-b hover:text-gray-100 hover:bg-yellow-500 text-gray-600 block px-3 py-2 rounded-md text-base font-medium" aria-current="page">grocery</a>
+            <a href="#remittance" class="hover:border-yellow-600 hover:border-b hover:text-gray-100 hover:bg-yellow-500 text-gray-600 block px-3 py-2 rounded-md text-base font-medium" aria-current="page">remittance</a>
+          </div>
+        </div>
+      </nav>
+
+
       <section class="w-full p-7 pb-0" name="hero" aria-label="Hero">
         <div class="max-w-5xl ml-auto mr-auto flex-col">
             <div class="h-full flex justify-start mb-5">
-                <div class="h-96 w-full mr-5 rounded-md border-2 border-yellow-500"></div>
+                <div class="h-96 w-full mr-0 md:mr-5 rounded-md border-2 border-yellow-500"></div>
             </div>
             <div class="flex-col justify-self-start font-semibold">
-                <h1 class="pb-2.5 text-4xl text-yellow-500 text-opacity-70">HOMEMADE FILIPINO FOOD</h1>
-                <h1 class="pb-1 text-4xl text-yellow-600 text-opacity-100">AND FRESHLY BAKED BREADS</h1>
-                <p class="pb-2 text-sm text-gray-600 font-normal">We also have <span class="italic">Filipino</span> snacks, desserts and groceries</p>
+                <h1 class="pb-2.5 text-2xl sm:text-3xl md:text-4xl text-yellow-500 text-opacity-70">HOMEMADE FILIPINO FOOD</h1>
+                <h1 class="pb-1 text-2xl sm:text-3xl md:text-4xl text-yellow-600 text-opacity-100">AND FRESHLY BAKED BREADS</h1>
+                <p class="pb-2 text-xs sm:text-sm text-gray-600 font-normal">We also have <span class="italic">Filipino</span> snacks, desserts and groceries</p>
 
                 <a href="#contactUs" class="inline-flex h-10 items-center p-1.5 bg-yellow-500 border-b-2 border-blue-400 shadow-md rounded-2xl">
                     <span class="text-gray-50 pr-4 text-sm pl-2">Contact Us</span>
